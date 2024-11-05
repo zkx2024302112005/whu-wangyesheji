@@ -1,3 +1,38 @@
+header{
+    background-color: rgba(0, 100, 58, 0.81);
+    height: 80px;
+    width: 100%;
+}
+h1 {color: aliceblue;
+position: absolute;
+
+    left: 120px;
+    height: 100px;
+
+
+}
+header ul{
+    position: absolute;
+    right: 30%;
+    line-height: 80px;
+}
+header a{color: aliceblue;
+    text-decoration: none;
+
+}
+header li{
+    display: inline;
+    margin-right: 4vw;
+}
+header a:hover{
+    text-decoration: underline
+}
+
+
+
+
+
+
 :root {
     --v1: #be91c6;
     --v2: #8a65cc;
@@ -492,28 +527,26 @@
     margin: 0px;
     padding: 0px;
 }
-a {
-    color: black;
-}
-html,
-body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-}
+
+
+
 .sec2,
 .sec1 {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background-color: white;
     color: black;
     text-align: center;
     display: flex;
+
+    font-family:  楷体;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: poppins;
+    font-size: 70px;
+
 }
-.sec2 > h1 {
+.sec2 > h2 {
     animation: revealing;
     animation-timeline: view(block);
     animation-range: cover 0% cover 50%;
@@ -536,7 +569,7 @@ footer {
     text-align: center;
     background-color: darkgreen;
     padding: 20px; /* 可选：增加内边距以改善视觉效果 */
-    font-family: 'Arial', sans-serif; /* 选择你喜欢的字体 */
+    font-family: 'Arial', sans-serif 楷书; /* 选择你喜欢的字体 */
     color: white; /* 可选：改变文字颜色以提高可读性 */
 }
 
@@ -562,4 +595,346 @@ mark {
     background-size: 200% 100%;
     border-radius: 0.125rem;
     padding-inline: 0.125rem;
+}
+.first{
+    height: 95vh;
+    background-image: url("生态文明/动物/1.jpg");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 楷体;
+}
+.first h6{
+    font-size: 100px;
+}
+.first p{
+    color: cornsilk;
+    font-size: 50px;
+    margin: 25px 0;
+}
+.second{
+    height: 30vh;
+    background-color: #ff896e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 楷体;
+}
+.second p1{
+    font-size: 40px;
+}
+.second p2{
+    font-size: 30px;
+}
+.third{
+    height: 30vh;
+    background-color: #cc658c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 楷体, fangsong;
+}
+.third p{
+    font-size: 30px;
+}
+
+
+.fourth {
+    @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #100721;
+        font-family: "Ubuntu Mono", monospace;
+        font-weight: 400;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 500px;
+        gap: 30px;
+
+        > div {
+            flex: 0 0 200px;
+            border-radius: 0.5rem;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+            box-shadow: 5px 10px 15px #1e0e3e;
+            position: relative;
+            overflow: hidden;
+
+            &:nth-of-type(1) {
+                background: url("生态文明/污染/99.png")
+                no-repeat 50% / cover;
+            }
+            &:nth-of-type(2) {
+                background: url("生态文明/污染/98.png")
+                no-repeat 50% / cover;
+            }
+            &:nth-of-type(3) {
+                background: url("生态文明/污染/97.png")
+                no-repeat 50% / cover;
+            }
+            &:nth-of-type(4) {
+                background: url("生态文明/污染/93.png")
+                no-repeat 50% / cover;
+            }
+
+            .content {
+                font-size: 1.5rem;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                padding: 15px;
+                opacity: 0;
+                flex-direction: column;
+                height: 100%;
+                justify-content: flex-end;
+                background: rgb(2, 2, 46);
+                background: linear-gradient(
+                        0deg,
+                        rgba(2, 2, 46, 0.6755077030812324) 0%,
+                        rgba(255, 255, 255, 0) 100%
+                );
+                transform: translatey(100%);
+                transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+                visibility: hidden;
+
+                span {
+                    display: block;
+                    margin-top: 5px;
+                    font-size: 1.2rem;
+                }
+            }
+
+            &:hover {
+                flex: 0 0 250px;
+                box-shadow: 1px 3px 15px #7645d8;
+                transform: translatey(-30px);
+            }
+
+            &:hover .content {
+                opacity: 1;
+                transform: translatey(0%);
+                visibility: visible;
+            }
+        }
+    }
+
+        }
+
+
+.sixth{
+    background-image: url("生态文明/污染/95.png");
+    background-size: cover;
+    height: 100vh;
+    article {
+        /*  leverage cascade for cross-browser gradients  */
+        background: radial-gradient(
+                hsl(100 100% 60%),
+                hsl(200 100% 60%)
+        ) fixed;
+        background: conic-gradient(
+                hsl(100 100% 60%),
+                hsl(200 100% 60%),
+                hsl(100 100% 60%)
+        ) fixed;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
+    body {
+        background: hsl(204 100% 5%);
+        /*   background: conic-gradient(
+            hsl(100 100% 60%),
+            hsl(200 100% 60%),
+            hsl(100 100% 60%)
+          ) fixed; */
+        color: #00b4fd;
+        min-block-size: 200vh;
+        min-inline-size: 100%;
+        padding: 5vmin;
+        box-sizing: border-box;
+        display: grid;
+        place-content: center;
+        font-family: system-ui;
+        font-size: min(200%, 30vmin);
+    }
+
+    h4, p9, body {
+        margin: 10vmin 10vmin;
+    }
+
+    h4 {
+        font-size: 60px;
+        line-height: 1.1;
+        max-inline-size: 15ch;
+        margin: auto;
+        color: cornflowerblue;
+
+    }
+
+    p9 {
+        font-family: "Dank Mono", ui-monospace, monospace;
+        margin-top: 1ch;
+        line-height: 1.35;
+        max-inline-size: 40ch;
+        margin: 50px 100px;
+        font-size: 40px;
+    }
+
+    html {
+        block-size: 100%;
+        inline-size: 100%;
+        text-align: center;
+    }
+}
+
+.seventh{
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background: #161616;
+        min-height: 100vh;
+
+
+    section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#DA22FF, #9733EE);
+        clip-path: circle(30% at right 70%);
+    }
+
+    section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#E55D87, #5FC3E4);
+        clip-path: circle(20% at 10% 10%);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 40px 0;
+    }
+
+    .container .card {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0.05);
+        margin: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+    }
+
+    .container .card .content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+
+    .container .card:hover .content {
+        transform: translateY(-20px);
+    }
+
+    .container .card .content .imgBx {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .container .card .content .imgBx img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container .card .content .contentBx h3 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        margin: 20px 0 10px;
+        line-height: 1.1em;
+    }
+
+    .container .card .content .contentBx h3 span {
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: initial;
+    }
+
+    .container .card .sci {
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+    }
+
+    .container .card .sci li {
+        list-style: none;
+        margin: 0 10px;
+        transform: translateY(40px);
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .container .card:hover .sci li {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .container .card .sci li a {
+        color: #fff;
+        font-size: 20px;
+    }
 }
