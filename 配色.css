@@ -1,0 +1,25 @@
+*{
+    padding:0;
+    margin:0;
+    /* Color Theme Swatches in Hex */
+.Highland-range-1-hex { color: #C1B983; }
+.Highland-range-2-hex { color: #697640; }
+.Highland-range-3-hex { color: #639DB5; }
+.Highland-range-4-hex { color: #4F78A4; }
+.Highland-range-5-hex { color: #14264A; }
+
+/* Color Theme Swatches in RGBA */
+.Highland-range-1-rgba { color: rgba(193, 184, 130, 1); }
+.Highland-range-2-rgba { color: rgba(105, 117, 63, 1); }
+.Highland-range-3-rgba { color: rgba(98, 156, 181, 1); }
+.Highland-range-4-rgba { color: rgba(79, 119, 163, 1); }
+.Highland-range-5-rgba { color: rgba(19, 38, 73, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Highland-range-1-hsla { color: hsla(52, 33, 63, 1); }
+.Highland-range-2-hsla { color: hsla(74, 29, 35, 1); }
+.Highland-range-3-hsla { color: hsla(197, 35, 54, 1); }
+.Highland-range-4-hsla { color: hsla(211, 34, 47, 1); }
+.Highland-range-5-hsla { color: hsla(219, 57, 18, 1); }
+
+}
