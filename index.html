@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Cards</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Muli', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+        }
+
+       .container {
+            display: flex;
+            width: 90vw;
+        }
+
+       .panel {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 80vh;
+            border-radius: 50px;
+            color: #fff;
+            cursor: pointer;
+            flex: 0.5;
+            margin: 10px;
+            position: relative;
+            transition: all 700ms ease-in;
+        }
+
+       .panel h3 {
+            font-size: 24px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            margin: 0;
+            opacity: 0;
+            text-decoration: none;
+        }
+
+       .panel.active {
+            flex: 5;
+        }
+
+       .panel.active h3 {
+            opacity: 1;
+            transition: opacity 0.3s ease-in 0.4s;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+           .container {
+                width: 100vw;
+            }
+
+           .panel:nth-of-type(4),
+           .panel:nth-of-type(5) {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            const panels = document.querySelectorAll('.panel');
+            panels.forEach(panel => {
+                panel.addEventListener('click', function (event) {
+                    const headingText = event.target.tagName === 'H3'? event.target.textContent : null;
+                    if (headingText === '水污染') {
+                        window.location.href = 'waterPollution.html';
+                    } else if (headingText === '大气污染') {
+                        window.location.href = 'airPollution.html';
+                    } else if (headingText === '白色污染') {
+                        window.location.href = 'whitePollution.html';
+                    } else if (headingText === '核污染') {
+                        window.location.href = 'nuclearPollution.html';
+                    } else if (headingText === '重金属污染') {
+                        window.location.href = 'heavyMetalPollution.html';
+                    } else {
+                        removeActiveClasses();
+                        panel.classList.add('active');
+                    }
+                });
+            });
+
+            function removeActiveClasses() {
+                panels.forEach(panel => {
+                    panel.classList.remove('active');
+                });
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel active"
+            style="background-image: url('http://news.cjn.cn/whsztp/201604/W020160416531470813896.jpg')">
+            <h3>水污染</h3>
+        </div>
+        <div class="panel"
+            style="background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.847bc34bbeec4096fd6efe0a02722b8c?rik=bxIfX0tRToaDUA&riu=http%3a%2f%2fwww.cnreagent.com%2fdata%2fdaily%2f2020%2f06%2f17%2f082530_576763_article_1047709.jpg&ehk=kouARbE2AKRzAJYJXkSrROUluUDuOhYX8ht%2fchHbrvY%3d&risl=&pid=ImgRaw&r=0')">
+            <h3>大气污染</h3>
+        </div>
+        <div class="panel"
+            style="background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.e7486f13074561cfff9f25a94aea18db?rik=n2r28LCz0s%2fdIA&riu=http%3a%2f%2fwww.doinggroup.com.cn%2fuploads%2fallimg%2f140618%2f1-14061QJ54L20.jpg&ehk=I8J3Otn8%2f4iAPss139mqoW1QwaTjgtSIdHV4mKOXRkQ%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1')">
+            <h3>白色污染</h3>
+        </div>
+        <div class="panel"
+            style="background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.b88a81643c02a21ee4a17add28a02fe1?rik=aXxIEZhtiuzcxw&riu=http%3a%2f%2fn.sinaimg.cn%2fsinakd20121%2f178%2fw641h337%2f20210413%2fa3c7-knqqqmv3622762.jpg&ehk=B5v1gxpZit3dYTk%2f5rsnQ8i6IohWPPPRMWRYt3qOtmc%3d&risl=&pid=ImgRaw&r=0')">
+            <h3>核污染</h3>
+        </div>
+        <div class="panel"
+            style="background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.b563d03411a03c749415d0b77357757b?rik=qmYtIK0GCbXzwA&riu=http%3a%2f%2fi2.sinaimg.cn%2fdy%2fo%2f2014-12-03%2f1417587366_HDhcF6.jpg&ehk=bsHQA775Di7N3Iuh1yJeE6OVKIoORAvn8rB8%2bJRFu%2fM%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1')">
+            <h3>重金属污染</h3>
+        </div>
+    </div>
+</body>
+
+</html>
