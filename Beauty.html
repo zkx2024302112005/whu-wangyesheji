@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自然之美 - 风光展示</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .bg-image {
+    background-image: url('background.avif');
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .content h1 {
+    font-size: 3em;
+    font-weight: bold;
+  }
+
+  .content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+  }
+
+  .gallery-item {
+    max-width: 300px;
+    margin: 15px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery p {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  首页
+  风光展示
+  关于我们
+</div>
+
+<div class="bg-image">
+  <div class="content">
+    <h1>自然风光展示</h1>
+    <p>这里展示的是自然界中的美丽瞬间，每一张照片都诉说着大自然的独特魅力。</p >
+  </div>
+</div>
+
+<div id="gallery" class="gallery">
+  <div class="gallery-item">
+    <img src="湖泊.jpg" alt="自然风光1">
+    <p>宁静的湖泊，倒映着天空的碧蓝。</p >
+  </div>
+  <div class="gallery-item">
+    <img src="山脉.avif" alt="自然风光2">
+    <p>绵延的山脉，如同大地坚实的脊梁。</p >
+  </div>
+  <div class="gallery-item">
+    <img src="日出.avif" alt="自然风光3">
+    <p>绚烂的日出，照亮了新的一天。</p >
+  </div>
+  <div class="gallery-item">
+    <img src="深林.avif" alt="自然风光4">
+    <p>茂密的森林，是大自然生命的摇篮。</p >
+  </div>
+  <div class="gallery-item">
+    <img src="瀑布.avif" alt="自然风光5">
+    <p>壮观的瀑布，倾泻而下的不仅是水，还有自然的活力。</p >
+  </div>
+</div>
+
+<div class="footer">
+  <p>版权所有 &copy; 2023 自然之美</p >
+</div>
+
+</body>
+</html>
